@@ -1,1 +1,1 @@
-Data-Repository fuer coronaAT
+Data-Repository (Quelle: https://info.gesundheitsministerium.at/)
