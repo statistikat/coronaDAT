@@ -16,11 +16,11 @@ Die Datenstruktur im erzeugten Datenrepository ist wie folgt:
 enthält die gescrapten Daten von [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). Dazu wird für jeden Tag ein Unterordner angelegt. Einzelne Dateien sind für jeden gescrapten Zeitpunkt als 
 
 - `/archive/{day}/data/{day}_{timestamp}.rds` 
-- `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds` (daten über Hospitalisierungen/Intensivfälle; seit `26.3.2020`)
+- `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds` (Daten über Hospitalisierungen/Intensivfälle; seit `26.3.2020`)
 - `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` (die unmodifizierten js-datenfiles; seit dem `27.3.2020`)
+- `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds.rds` (Daten über Gesundungen/Todesfälle; seit `2.4.2020`)
 
 im Repo enthalten.
-
 
 ### `/latest`
 enthält Files für die einzelnen Auswertungen für den aktuellsten Zeitpunkt in verschiedenen Formaten. Insbesondere:
