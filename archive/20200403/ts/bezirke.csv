@@ -1,95 +1,189 @@
 "bezirk";"freq";"date"
-"Amstetten";191;2020-04-03
-"Baden";94;2020-04-03
-"Bludenz";210;2020-04-03
-"Braunau am Inn";70;2020-04-03
-"Bregenz";185;2020-04-03
-"Bruck an der Leitha";54;2020-04-03
-"Bruck-Mürzzuschlag";41;2020-04-03
-"Deutschlandsberg";28;2020-04-03
-"Dornbirn";121;2020-04-03
-"Eferding";36;2020-04-03
-"Eisenstadt(Stadt)";12;2020-04-03
-"Eisenstadt-Umgebung";14;2020-04-03
-"Feldkirch";181;2020-04-03
-"Feldkirchen";8;2020-04-03
-"Freistadt";95;2020-04-03
-"Gänserndorf";53;2020-04-03
-"Gmünd";6;2020-04-03
-"Gmunden";56;2020-04-03
-"Graz(Stadt)";295;2020-04-03
-"Graz-Umgebung";106;2020-04-03
-"Grieskirchen";58;2020-04-03
-"Gröbming";28;2020-04-03
-"Güssing";11;2020-04-03
-"Hallein";58;2020-04-03
-"Hartberg-Fürstenfeld";222;2020-04-03
-"Hermagor";1;2020-04-03
-"Hollabrunn";14;2020-04-03
-"Horn";16;2020-04-03
-"Imst";217;2020-04-03
-"Innsbruck-Land";311;2020-04-03
-"Innsbruck-Stadt";327;2020-04-03
-"Jennersdorf";8;2020-04-03
-"Kirchdorf an der Krems";35;2020-04-03
-"Kitzbühel";280;2020-04-03
-"Klagenfurt Land";35;2020-04-03
-"Klagenfurt Stadt";57;2020-04-03
-"Korneuburg";117;2020-04-03
-"Krems an der Donau(Stadt)";25;2020-04-03
-"Krems(Land)";104;2020-04-03
-"Kufstein";353;2020-04-03
-"Landeck";684;2020-04-03
-"Leibnitz";148;2020-04-03
-"Leoben";22;2020-04-03
-"Lienz";108;2020-04-03
-"Liezen";38;2020-04-03
-"Lilienfeld";34;2020-04-03
-"Linz(Stadt)";239;2020-04-03
-"Linz-Land";172;2020-04-03
-"Mattersburg";29;2020-04-03
-"Melk";109;2020-04-03
-"Mistelbach";90;2020-04-03
-"Mödling";116;2020-04-03
-"Murau";5;2020-04-03
-"Murtal";31;2020-04-03
-"Neunkirchen";139;2020-04-03
-"Neusiedl am See";45;2020-04-03
-"Oberpullendorf";15;2020-04-03
-"Oberwart";69;2020-04-03
-"Perg";234;2020-04-03
-"Reutte";44;2020-04-03
-"Ried im Innkreis";27;2020-04-03
-"Rohrbach";120;2020-04-03
-"Salzburg(Stadt)";121;2020-04-03
-"Salzburg-Umgebung";156;2020-04-03
-"Sankt Johann im Pongau";376;2020-04-03
-"Sankt Pölten(Land)";197;2020-04-03
-"Sankt Pölten(Stadt)";54;2020-04-03
-"Sankt Veit an der Glan";36;2020-04-03
-"Schärding";47;2020-04-03
-"Scheibbs";89;2020-04-03
-"Schwaz";245;2020-04-03
-"Spittal an der Drau";31;2020-04-03
-"Steyr(Stadt)";36;2020-04-03
-"Steyr-Land";120;2020-04-03
-"Südoststeiermark";40;2020-04-03
-"Tamsweg";17;2020-04-03
-"Tulln";120;2020-04-03
-"Urfahr-Umgebung";244;2020-04-03
-"Villach Land";41;2020-04-03
-"Villach Stadt";15;2020-04-03
-"Vöcklabruck";94;2020-04-03
-"Voitsberg";75;2020-04-03
-"Völkermarkt";45;2020-04-03
-"Waidhofen an der Thaya";14;2020-04-03
-"Waidhofen an der Ybbs(Stadt)";22;2020-04-03
-"Weiz";90;2020-04-03
-"Wels(Stadt)";54;2020-04-03
-"Wels-Land";68;2020-04-03
-"Wien(Stadt)";1607;2020-04-03
-"Wiener Neustadt(Land)";31;2020-04-03
-"Wiener Neustadt(Stadt)";28;2020-04-03
-"Wolfsberg";31;2020-04-03
-"Zell am See";305;2020-04-03
-"Zwettl";29;2020-04-03
+"Amstetten";191;2020-04-03 00:00:00
+"Baden";94;2020-04-03 00:00:00
+"Bludenz";210;2020-04-03 00:00:00
+"Braunau am Inn";70;2020-04-03 00:00:00
+"Bregenz";185;2020-04-03 00:00:00
+"Bruck an der Leitha";54;2020-04-03 00:00:00
+"Bruck-Mürzzuschlag";41;2020-04-03 00:00:00
+"Deutschlandsberg";28;2020-04-03 00:00:00
+"Dornbirn";121;2020-04-03 00:00:00
+"Eferding";36;2020-04-03 00:00:00
+"Eisenstadt(Stadt)";12;2020-04-03 00:00:00
+"Eisenstadt-Umgebung";14;2020-04-03 00:00:00
+"Feldkirch";181;2020-04-03 00:00:00
+"Feldkirchen";8;2020-04-03 00:00:00
+"Freistadt";95;2020-04-03 00:00:00
+"Gänserndorf";53;2020-04-03 00:00:00
+"Gmünd";6;2020-04-03 00:00:00
+"Gmunden";56;2020-04-03 00:00:00
+"Graz(Stadt)";295;2020-04-03 00:00:00
+"Graz-Umgebung";106;2020-04-03 00:00:00
+"Grieskirchen";58;2020-04-03 00:00:00
+"Gröbming";28;2020-04-03 00:00:00
+"Güssing";11;2020-04-03 00:00:00
+"Hallein";58;2020-04-03 00:00:00
+"Hartberg-Fürstenfeld";222;2020-04-03 00:00:00
+"Hermagor";1;2020-04-03 00:00:00
+"Hollabrunn";14;2020-04-03 00:00:00
+"Horn";16;2020-04-03 00:00:00
+"Imst";217;2020-04-03 00:00:00
+"Innsbruck-Land";311;2020-04-03 00:00:00
+"Innsbruck-Stadt";327;2020-04-03 00:00:00
+"Jennersdorf";8;2020-04-03 00:00:00
+"Kirchdorf an der Krems";35;2020-04-03 00:00:00
+"Kitzbühel";280;2020-04-03 00:00:00
+"Klagenfurt Land";35;2020-04-03 00:00:00
+"Klagenfurt Stadt";57;2020-04-03 00:00:00
+"Korneuburg";117;2020-04-03 00:00:00
+"Krems an der Donau(Stadt)";25;2020-04-03 00:00:00
+"Krems(Land)";104;2020-04-03 00:00:00
+"Kufstein";353;2020-04-03 00:00:00
+"Landeck";684;2020-04-03 00:00:00
+"Leibnitz";148;2020-04-03 00:00:00
+"Leoben";22;2020-04-03 00:00:00
+"Lienz";108;2020-04-03 00:00:00
+"Liezen";38;2020-04-03 00:00:00
+"Lilienfeld";34;2020-04-03 00:00:00
+"Linz(Stadt)";239;2020-04-03 00:00:00
+"Linz-Land";172;2020-04-03 00:00:00
+"Mattersburg";29;2020-04-03 00:00:00
+"Melk";109;2020-04-03 00:00:00
+"Mistelbach";90;2020-04-03 00:00:00
+"Mödling";116;2020-04-03 00:00:00
+"Murau";5;2020-04-03 00:00:00
+"Murtal";31;2020-04-03 00:00:00
+"Neunkirchen";139;2020-04-03 00:00:00
+"Neusiedl am See";45;2020-04-03 00:00:00
+"Oberpullendorf";15;2020-04-03 00:00:00
+"Oberwart";69;2020-04-03 00:00:00
+"Perg";234;2020-04-03 00:00:00
+"Reutte";44;2020-04-03 00:00:00
+"Ried im Innkreis";27;2020-04-03 00:00:00
+"Rohrbach";120;2020-04-03 00:00:00
+"Salzburg(Stadt)";121;2020-04-03 00:00:00
+"Salzburg-Umgebung";156;2020-04-03 00:00:00
+"Sankt Johann im Pongau";376;2020-04-03 00:00:00
+"Sankt Pölten(Land)";197;2020-04-03 00:00:00
+"Sankt Pölten(Stadt)";54;2020-04-03 00:00:00
+"Sankt Veit an der Glan";36;2020-04-03 00:00:00
+"Schärding";47;2020-04-03 00:00:00
+"Scheibbs";89;2020-04-03 00:00:00
+"Schwaz";245;2020-04-03 00:00:00
+"Spittal an der Drau";31;2020-04-03 00:00:00
+"Steyr(Stadt)";36;2020-04-03 00:00:00
+"Steyr-Land";120;2020-04-03 00:00:00
+"Südoststeiermark";40;2020-04-03 00:00:00
+"Tamsweg";17;2020-04-03 00:00:00
+"Tulln";120;2020-04-03 00:00:00
+"Urfahr-Umgebung";244;2020-04-03 00:00:00
+"Villach Land";41;2020-04-03 00:00:00
+"Villach Stadt";15;2020-04-03 00:00:00
+"Vöcklabruck";94;2020-04-03 00:00:00
+"Voitsberg";75;2020-04-03 00:00:00
+"Völkermarkt";45;2020-04-03 00:00:00
+"Waidhofen an der Thaya";14;2020-04-03 00:00:00
+"Waidhofen an der Ybbs(Stadt)";22;2020-04-03 00:00:00
+"Weiz";90;2020-04-03 00:00:00
+"Wels(Stadt)";54;2020-04-03 00:00:00
+"Wels-Land";68;2020-04-03 00:00:00
+"Wien(Stadt)";1607;2020-04-03 00:00:00
+"Wiener Neustadt(Land)";31;2020-04-03 00:00:00
+"Wiener Neustadt(Stadt)";28;2020-04-03 00:00:00
+"Wolfsberg";31;2020-04-03 00:00:00
+"Zell am See";305;2020-04-03 00:00:00
+"Zwettl";29;2020-04-03 00:00:00
+"Amstetten";191;2020-04-03 01:00:00
+"Baden";94;2020-04-03 01:00:00
+"Bludenz";210;2020-04-03 01:00:00
+"Braunau am Inn";70;2020-04-03 01:00:00
+"Bregenz";185;2020-04-03 01:00:00
+"Bruck an der Leitha";54;2020-04-03 01:00:00
+"Bruck-Mürzzuschlag";41;2020-04-03 01:00:00
+"Deutschlandsberg";28;2020-04-03 01:00:00
+"Dornbirn";121;2020-04-03 01:00:00
+"Eferding";36;2020-04-03 01:00:00
+"Eisenstadt(Stadt)";12;2020-04-03 01:00:00
+"Eisenstadt-Umgebung";14;2020-04-03 01:00:00
+"Feldkirch";181;2020-04-03 01:00:00
+"Feldkirchen";8;2020-04-03 01:00:00
+"Freistadt";95;2020-04-03 01:00:00
+"Gänserndorf";53;2020-04-03 01:00:00
+"Gmünd";6;2020-04-03 01:00:00
+"Gmunden";56;2020-04-03 01:00:00
+"Graz(Stadt)";295;2020-04-03 01:00:00
+"Graz-Umgebung";106;2020-04-03 01:00:00
+"Grieskirchen";58;2020-04-03 01:00:00
+"Gröbming";28;2020-04-03 01:00:00
+"Güssing";11;2020-04-03 01:00:00
+"Hallein";58;2020-04-03 01:00:00
+"Hartberg-Fürstenfeld";222;2020-04-03 01:00:00
+"Hermagor";1;2020-04-03 01:00:00
+"Hollabrunn";14;2020-04-03 01:00:00
+"Horn";16;2020-04-03 01:00:00
+"Imst";217;2020-04-03 01:00:00
+"Innsbruck-Land";311;2020-04-03 01:00:00
+"Innsbruck-Stadt";327;2020-04-03 01:00:00
+"Jennersdorf";8;2020-04-03 01:00:00
+"Kirchdorf an der Krems";35;2020-04-03 01:00:00
+"Kitzbühel";280;2020-04-03 01:00:00
+"Klagenfurt Land";35;2020-04-03 01:00:00
+"Klagenfurt Stadt";57;2020-04-03 01:00:00
+"Korneuburg";117;2020-04-03 01:00:00
+"Krems an der Donau(Stadt)";25;2020-04-03 01:00:00
+"Krems(Land)";104;2020-04-03 01:00:00
+"Kufstein";353;2020-04-03 01:00:00
+"Landeck";684;2020-04-03 01:00:00
+"Leibnitz";148;2020-04-03 01:00:00
+"Leoben";22;2020-04-03 01:00:00
+"Lienz";108;2020-04-03 01:00:00
+"Liezen";38;2020-04-03 01:00:00
+"Lilienfeld";34;2020-04-03 01:00:00
+"Linz(Stadt)";239;2020-04-03 01:00:00
+"Linz-Land";172;2020-04-03 01:00:00
+"Mattersburg";29;2020-04-03 01:00:00
+"Melk";109;2020-04-03 01:00:00
+"Mistelbach";90;2020-04-03 01:00:00
+"Mödling";116;2020-04-03 01:00:00
+"Murau";5;2020-04-03 01:00:00
+"Murtal";31;2020-04-03 01:00:00
+"Neunkirchen";139;2020-04-03 01:00:00
+"Neusiedl am See";45;2020-04-03 01:00:00
+"Oberpullendorf";15;2020-04-03 01:00:00
+"Oberwart";69;2020-04-03 01:00:00
+"Perg";234;2020-04-03 01:00:00
+"Reutte";44;2020-04-03 01:00:00
+"Ried im Innkreis";27;2020-04-03 01:00:00
+"Rohrbach";120;2020-04-03 01:00:00
+"Salzburg(Stadt)";121;2020-04-03 01:00:00
+"Salzburg-Umgebung";156;2020-04-03 01:00:00
+"Sankt Johann im Pongau";376;2020-04-03 01:00:00
+"Sankt Pölten(Land)";197;2020-04-03 01:00:00
+"Sankt Pölten(Stadt)";54;2020-04-03 01:00:00
+"Sankt Veit an der Glan";36;2020-04-03 01:00:00
+"Schärding";47;2020-04-03 01:00:00
+"Scheibbs";89;2020-04-03 01:00:00
+"Schwaz";245;2020-04-03 01:00:00
+"Spittal an der Drau";31;2020-04-03 01:00:00
+"Steyr(Stadt)";36;2020-04-03 01:00:00
+"Steyr-Land";120;2020-04-03 01:00:00
+"Südoststeiermark";40;2020-04-03 01:00:00
+"Tamsweg";17;2020-04-03 01:00:00
+"Tulln";120;2020-04-03 01:00:00
+"Urfahr-Umgebung";244;2020-04-03 01:00:00
+"Villach Land";41;2020-04-03 01:00:00
+"Villach Stadt";15;2020-04-03 01:00:00
+"Vöcklabruck";94;2020-04-03 01:00:00
+"Voitsberg";75;2020-04-03 01:00:00
+"Völkermarkt";45;2020-04-03 01:00:00
+"Waidhofen an der Thaya";14;2020-04-03 01:00:00
+"Waidhofen an der Ybbs(Stadt)";22;2020-04-03 01:00:00
+"Weiz";90;2020-04-03 01:00:00
+"Wels(Stadt)";54;2020-04-03 01:00:00
+"Wels-Land";68;2020-04-03 01:00:00
+"Wien(Stadt)";1607;2020-04-03 01:00:00
+"Wiener Neustadt(Land)";31;2020-04-03 01:00:00
+"Wiener Neustadt(Stadt)";28;2020-04-03 01:00:00
+"Wolfsberg";31;2020-04-03 01:00:00
+"Zell am See";305;2020-04-03 01:00:00
+"Zwettl";29;2020-04-03 01:00:00
