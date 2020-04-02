@@ -18,7 +18,7 @@ enthält die gescrapten Daten von [`info.gesundheitsministerium.at`](https://inf
 - `/archive/{day}/data/{day}_{timestamp}.rds` 
 - `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds` (Daten über Hospitalisierungen/Intensivfälle; seit `26.3.2020`)
 - `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` (die unmodifizierten js-datenfiles; seit dem `27.3.2020`)
-- `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds.rds` (Daten über Gesundungen/Todesfälle; seit `2.4.2020`)
+- `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds` (Daten über Gesundungen/Todesfälle; seit `2.4.2020`)
 
 im Repo enthalten.
 
