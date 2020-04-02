@@ -30,7 +30,9 @@ enthält Files für die einzelnen Auswertungen für den aktuellsten Zeitpunkt in
 - `/latest/bezirke.{csv|rds|json}`: bestätigte Fälle nach politischen Bezirken
 - `/latest/bundesland.{csv|rds|json}`: bestätigte Fälle nach Bundesland
 - `/latest/geschlecht.{csv|rds|json}`: Anteil der bestätigten Fälle nach Geschlecht
-- `/latest/hospitalisierungen_bl.{csv|rds|json}`: hospitalisierte Personen und Personen auf der Intensivstation nach Bundesländern  (erst ab `26.3.2020` enthalten)
+- `/latest/hospitalisierungen_bl.{csv|rds|json}`: Anzahl der Hospitalisierungen nach Bundesland (seit `26.3.2020`)
+- `/latest/sterbefaelle_bl.{csv|rds|json}`: Anzahl der Sterbefaelle nach Bundesland (seit `2.4.2020`)
+- `/latest/gesundungen_bl.{csv|rds|json}`: Anzahl der Gesundungen nach Bundesland (seit `2.4.2020`)
 
 ### `/ts`
 enthält Zeitreihendaten für die einzelnen Auswertungen in verschiedenen Formaten. Insbesondere:
@@ -41,7 +43,9 @@ enthält Zeitreihendaten für die einzelnen Auswertungen in verschiedenen Format
 - `/ts/bundesland.{csv|rds|json}`: bestätigte Fälle nach Bundesland
 - `/ts/geschlecht.{csv|rds|json}`: Anteil der bestätigten Fälle nach Geschlecht
 - `/ts/trend.{csv|rds|json}`: Anzahl der bestätigten Fälle gesamt
-- `/ts/hospitalisierungen_bl.{csv|rds|json}`: hospitalisierte Personen und Personen auf der Intensivstation nach Bundesländern  (erst ab `26.3.2020` enthalten)
- 
+- `/ts/hospitalisierungen_bl.{csv|rds|json}`: Anzahl der Hospitalisierungen nach Bundesland (seit `26.3.2020`)
+- `/ts/sterbefaelle_bl.{csv|rds|json}`: Anzahl der Sterbefaelle nach Bundesland (seit `2.4.2020`)
+- `/ts/gesundungen_bl.{csv|rds|json}`: Anzahl der Gesundungen nach Bundesland (seit `2.4.2020`)
+
 ### `/coronadata_ts_latest.{rds|json}`
-Diese Files enthalten die gesamte, gescrapte History.
+Diese Files enthalten die gesamte, gescrapte History exclusive Anzahl der Sterbefälle und Hospitalisierungen nach Bundesland.
