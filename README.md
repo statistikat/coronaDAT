@@ -1,62 +1,59 @@
 # coronaDat
 
-In diesem Datenrepo werden automatisiert die vom Österreichischen Gesundheitsministerium unter  [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at) bereitgestellten - Covid19 relevanten Daten - gesammelt und archiviert, sodass eine (spätere) Analyse auch im Zeitverlauf möglich ist.
+This repo contains official Covid19-related data provided by the Austrian ministry of Social Affairs, Health, Care and Consumer Protection at [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). The official dashboard only provides data at a given timestamp. In this repo we provide automatically (web)-scraped data so that data-analysis and visualisation is possible over time .
 
 ## Updates
 ### 4.4.2020
-- Alle `csv` Files werden als *_en.csv* auch mit `,` als Separator abgespeichert, damit die Files in Github besser angezeigt werden ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
+- all `csv` files are additionally provided using `,` (colon) as separator in the ` _en.csv` suffix because such files are better displayed on [`github.com`](https://www.github.com) ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
 
 ### 2.4.2020
-Die Anzahl der Sterbefälle und Gesundungen nach Bundesland werden in `/latest/sterbefaelle_bl.{csv|rds|json}` und `/latest/gesundungen_bl.{csv|rds|json}` bzw die Zeitreihen unter `/ts/sterbefaelle_bl.{csv|rds|json}` und `/ts/gesundungen_bl.{csv|rds|json}` abgespeichert.
+- the current number of  deceased and recovered persons by federal state are provided in `/latest/sterbefaelle_bl.{csv|rds|json}` 
+- the time series of deceased and recovered persons by federal state are provided at `/ts/sterbefaelle_bl.{csv|rds|json}` and `/ts/gesundungen_bl.{csv|rds|json}`
 
 ### 27.3.2020
-Die originalen Datensätze (`*.js`) werden in `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` mitgespeichert
+- originally scraped datasets (`*.js`) are provided in `/archive/{day}/data/{day}_{timestamp}_orig_js.zip`
 
 ### 26.3.2020
-An diesem Tag wurde Dashboard verändert. 
+The official dashboard changed on this day. Most-notable changes include:
+-  the number of hospitalized persons/persons in intensive care was removed from the dashboard and is now provided (by federal state) daily at [this place](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung) , which is provided in the repo, too.
+- data are updated only hourly and no longer every 15 minutes
+- data by political districts only contain a single value for Vienna (no district-numbers)
 
-- die Anzahl der Hospitalisierungen bzw. Personen, die Intensivbetreuung benötigen  wurde aus dem Dashboard entfernt. Die Zahlen (inkl. Bundesländerauswertung) wird stattdessen täglich unter [diesem Link](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung) bereitgestellt. Die relevante Tabelle wird seit diesem Zeitpunkt ebenfalls gescrapt
-
-- die Datenaktualisierung ist seit diesem Zeitpunkt nur mehr stündlich (nicht mehr alle 15 Minuten)
-- die Bezirksdaten enthalten seit diesem Zeitpunkt nur mehr einen Wert für Wien da einzelnen Wiener Bezirksergebnisse nicht mehr ausgewiesen werden
-
-## Datenstruktur
-Die Datenstruktur im erzeugten Datenrepository ist wie folgt:
+## Repo-structure
+The data-structure in this repo is as follows:
 
 ### `/archive`
-enthält die gescrapten Daten von [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). Dazu wird für jeden Tag ein Unterordner angelegt. Einzelne Dateien sind für jeden gescrapten Zeitpunkt als 
+contains the scraped data from [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). For each day, a subfolder is created. The following files are put here:
 
-- `/archive/{day}/data/{day}_{timestamp}.rds` 
-- `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds` (Daten über Hospitalisierungen/Intensivfälle; seit `26.3.2020`)
-- `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` (die unmodifizierten js-datenfiles; seit dem `27.3.2020`)
-- `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds` (Daten über Gesundungen/Todesfälle; seit `2.4.2020`)
+- `/archive/{day}/data/{day}_{timestamp}.rds`: a `R` list with the following elements for a given timestamp
+	* `allgemein`: number of Covid19-cases in Austria; possibly the also the number of hospitalized persons and persons requiring intensive care (otherwise `NA`)  
+	* `bezirke`: number of cases by political districts
+	* `alter`: number of cases by age-groups
+	* `geschlecht`: percentage of Covid19-cases by gender
+	* `bundesland`: number of cases by federal states
+	* `trend`: number of cases in Austria (total) by day (latest numbers)
+	* `timestamp`: timestamp at  which this dataset was valid
 
-im Repo enthalten.
+- `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds`:  contains data about the number of hospitalized persons and persons requiring intensive case 
+- `/archive/{day}/data/{day}_{timestamp}_orig_js.zip`: unmodified scraped data from [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at])
+- `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds`: numbers about recovered and deceased persons by federal state
+
+In - `/archive/{day}/ts/`, time-series for the current day are provided:
+
+- `/archive/{day}/ts/allgemein.{csv|rds|json}`: number of confirmed cases, number of hospitalized people and people in intensive care as well as the number of tests for Austria (total)
+- `/archive/{day}/ts/alter.{csv|rds|json}`: number of confirmed cases by age-groups
+- `/archive/{day}/ts/bezirke.{csv|rds|json}`: number of confirmed cases by positical districts
+- `/archive/{day}/ts/bundesland.{csv|rds|json}`: number of confirmed cases by federal states
+- `/archive/{day}/ts/geschlecht.{csv|rds|json}`: percentage of confirmed cases by gender
+- `/archive/{day}/ts/hospitalisierungen_bl.{csv|rds|json}`: number of hospitalized persons by federal state
+- `/archive/{day}/ts/sterbefaelle_bl.{csv|rds|json}`: number of deceased persons by federal state
+- `/archive/{day}/ts/gesundungen_bl.{csv|rds|json}`: number of recovered persons by federal state
 
 ### `/latest`
-enthält Files für die einzelnen Auswertungen für den aktuellsten Zeitpunkt in verschiedenen Formaten. Insbesondere:
-
-- `/latest/allgemein.{csv|rds|json}`: bestätigte Fälle, hospitalisierte Personen und Personen auf der Intensivstation (gesamt Österreich)
-- `/latest/alter.{csv|rds|json}`: bestätigte Fälle nach Altersgruppen
-- `/latest/bezirke.{csv|rds|json}`: bestätigte Fälle nach politischen Bezirken
-- `/latest/bundesland.{csv|rds|json}`: bestätigte Fälle nach Bundesland
-- `/latest/geschlecht.{csv|rds|json}`: Anteil der bestätigten Fälle nach Geschlecht
-- `/latest/hospitalisierungen_bl.{csv|rds|json}`: Anzahl der Hospitalisierungen nach Bundesland (seit `26.3.2020`)
-- `/latest/sterbefaelle_bl.{csv|rds|json}`: Anzahl der Sterbefaelle nach Bundesland (seit `2.4.2020`)
-- `/latest/gesundungen_bl.{csv|rds|json}`: Anzahl der Gesundungen nach Bundesland (seit `2.4.2020`)
+Subfolder `/latest` contains the most-recent data. The files are the same as `/archive/{day}/ts/*` with the only difference being that the data are restricted to the most recent timestamp.
 
 ### `/ts`
-enthält Zeitreihendaten für die einzelnen Auswertungen in verschiedenen Formaten. Insbesondere:
-
-- `/ts/allgemein.{csv|rds|json}`: bestätigte Fälle, hospitalisierte Personen und Personen auf der Intensivstation
-- `/ts/alter.{csv|rds|json}`: bestätigte Fälle nach Altersgruppen
-- `/ts/bezirke.{csv|rds|json}`: bestätigte Fälle nach politischen Bezirken
-- `/ts/bundesland.{csv|rds|json}`: bestätigte Fälle nach Bundesland
-- `/ts/geschlecht.{csv|rds|json}`: Anteil der bestätigten Fälle nach Geschlecht
-- `/ts/trend.{csv|rds|json}`: Anzahl der bestätigten Fälle gesamt
-- `/ts/hospitalisierungen_bl.{csv|rds|json}`: Anzahl der Hospitalisierungen nach Bundesland (seit `26.3.2020`)
-- `/ts/sterbefaelle_bl.{csv|rds|json}`: Anzahl der Sterbefaelle nach Bundesland (seit `2.4.2020`)
-- `/ts/gesundungen_bl.{csv|rds|json}`: Anzahl der Gesundungen nach Bundesland (seit `2.4.2020`)
+Subfolder `/ts` contains the time-series data. The files are the same as `/archive/{day}/ts/*` with the only difference being that the files contain data for all available timestamps.
 
 ### `/coronadata_ts_latest.{rds|json}`
-Diese Files enthalten die gesamte, gescrapte History exclusive Anzahl der Sterbefälle und Hospitalisierungen nach Bundesland.
+These two files contain the entire, scraped history exclusive number of deceases persons and number of hospitalisations by federal state.
