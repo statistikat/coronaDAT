@@ -38,7 +38,7 @@ contains the scraped data from [`info.gesundheitsministerium.at`](https://info.g
 - `/archive/{day}/data/{day}_{timestamp}_orig_js.zip`: unmodified scraped data from [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at])
 - `/archive/{day}/data/{day}_{timestamp}_gesundungen_todesfaelle.rds`: numbers about recovered and deceased persons by federal state
 
-In - `/archive/{day}/ts/`, time-series for the current day are provided:
+In `/archive/{day}/ts/`, time-series for the current day are provided:
 
 - `/archive/{day}/ts/allgemein.{csv|rds|json}`: number of confirmed cases, number of hospitalized people and people in intensive care as well as the number of tests for Austria (total)
 - `/archive/{day}/ts/alter.{csv|rds|json}`: number of confirmed cases by age-groups
