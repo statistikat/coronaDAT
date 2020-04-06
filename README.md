@@ -3,6 +3,15 @@
 In diesem Datenrepo werden automatisiert die vom Österreichischen Gesundheitsministerium unter  [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at) bereitgestellten - Covid19 relevanten Daten - gesammelt und archiviert, sodass eine (spätere) Analyse auch im Zeitverlauf möglich ist.
 
 ## Updates
+### 4.4.2020
+- Alle `csv` Files werden als *_en.csv* auch mit `,` als Separator abgespeichert, damit die Files in Github besser angezeigt werden ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
+
+### 2.4.2020
+Die Anzahl der Sterbefälle und Gesundungen nach Bundesland werden in `/latest/sterbefaelle_bl.{csv|rds|json}` und `/latest/gesundungen_bl.{csv|rds|json}` bzw die Zeitreihen unter `/ts/sterbefaelle_bl.{csv|rds|json}` und `/ts/gesundungen_bl.{csv|rds|json}` abgespeichert.
+
+### 27.3.2020
+Die originalen Datensätze (`*.js`) werden in `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` mitgespeichert
+
 ### 26.3.2020
 An diesem Tag wurde Dashboard verändert. 
 
@@ -10,15 +19,6 @@ An diesem Tag wurde Dashboard verändert.
 
 - die Datenaktualisierung ist seit diesem Zeitpunkt nur mehr stündlich (nicht mehr alle 15 Minuten)
 - die Bezirksdaten enthalten seit diesem Zeitpunkt nur mehr einen Wert für Wien da einzelnen Wiener Bezirksergebnisse nicht mehr ausgewiesen werden
-
-### 27.3.2020
-Die originalen Datensätze (`*.js`) werden in `/archive/{day}/data/{day}_{timestamp}_orig_js.zip` mitgespeichert
-
-### 2.4.2020
-Die Anzahl der Sterbefälle und Gesundungen nach Bundesland werden in `/latest/sterbefaelle_bl.{csv|rds|json}` und `/latest/gesundungen_bl.{csv|rds|json}` bzw die Zeitreihen unter `/ts/sterbefaelle_bl.{csv|rds|json}` und `/ts/gesundungen_bl.{csv|rds|json}` abgespeichert.
-
-### 4.4.2020
-- Alle `csv` Files werden als *_en.csv* auch mit `,` als Separator abgespeichert, damit die Files in Github besser angezeigt werden ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
 
 ## Datenstruktur
 Die Datenstruktur im erzeugten Datenrepository ist wie folgt:
