@@ -26,12 +26,31 @@ The data-structure in this repo is as follows:
 contains the scraped data from [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). For each day, a subfolder is created. The following files are put here:
 
 - `/archive/{day}/data/{day}_{timestamp}.rds`: a `R` list with the following elements for a given timestamp
-	* `allgemein`: number of Covid19-cases in Austria; possibly the also the number of hospitalized persons and persons requiring intensive care (otherwise `NA`)  
-	* `bezirke`: number of cases by political districts
-	* `alter`: number of cases by age-groups
-	* `geschlecht`: percentage of Covid19-cases by gender
-	* `bundesland`: number of cases by federal states
-	* `trend`: number of cases in Austria (total) by day (latest numbers)
+	* `allgemein`: number of Covid19-cases in Austria; possibly the also the number of hospitalized persons and persons requiring intensive care (otherwise `NA`). This file has the following columns:
+		+ `"erkrankungen"`: number of confirmed cases
+		+ `"hospitalisiert"`: number of people that are hospitalized
+		+ `"intensivstation"`: number of people requiring intensive care
+		+ `"nr_tests"`: number of tests performed
+		+ `"date"`: timestamp
+	* `bezirke`: number of cases by political districts. The file contains the following columns:
+		+ `"bezirk"`: name of political district
+		+ `"freq"`: number of confirmed cases
+		+ `"date"`: timestamp
+	* `alter`: number of cases by age-groups containing the following variables:
+		+ `"altersgruppe"`: age group
+		+ `"freq"`: number of confirmed cases
+		+ `"date"`: timestamp
+	* `geschlecht`: percentage of Covid19-cases by gender with the following variables:
+		+ `"altersgruppe"`: gender group
+		+ `"freq"`: number of confirmed cases
+		+ `"date"`: timestamp
+	* `bundesland`: number of cases by federal states containing the following variables:
+		+ `"bundesland"`: name of federal state
+		+ `"freq"`: number of confirmed cases
+		+ `"date"`: timestamp	
+	* `trend`: number of cases in Austria (total) by day (latest numbers) with the following columns:
+		+ `"datum"`: day
+		+ `"freq"`: number of confirmed cases		
 	* `timestamp`: timestamp at  which this dataset was valid
 
 - `/archive/{day}/data/{day}_{timestamp}_hospitalisierung.rds`:  contains data about the number of hospitalized persons and persons requiring intensive case 
