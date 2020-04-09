@@ -9,9 +9,10 @@ This repo contains official Covid19-related data provided by the Austrian minist
 - In all time-series files, labels of political districts have been replaced with an id (variable `bkz`)
 - In all time-series files, labels of federal states been replaced with an id (variable `nuts2`)
 - mapping-files between previously included labels and ids are provides 
-  * -`/mapping_nuts.{csv|rds|json}` for federal states
-  * -`/mapping_polbez.{csv|rds|json}` for politcal districts
-  
+  * `/mapping_nuts.{csv|rds|json}` for federal states
+  * `/mapping_polbez.{csv|rds|json}` for politcal districts
+- added daily-series in `/ts/daily_*` for internal projects; data are used from `1500` if available; otherwise ts nearest to 3pm.
+
 ### 4.4.2020
 - all `csv` files are additionally provided using `,` (colon) as separator in the ` _en.csv` suffix because such files are better displayed on [`github.com`](https://www.github.com) ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
 
@@ -81,7 +82,7 @@ In `/archive/{day}/ts/`, time-series for the current day are provided:
 Subfolder `/latest` contains the most-recent data. The files are the same as `/archive/{day}/ts/*` with the only difference being that the data are restricted to the most recent timestamp.
 
 ### `/ts`
-Subfolder `/ts` contains the time-series data. The files are the same as `/archive/{day}/ts/*` with the only difference being that the files contain data for all available timestamps.
+Subfolder `/ts` contains the time-series data. The files are the same as `/archive/{day}/ts/*` with the only difference being that the files contain data for all available timestamps. Additionally, in `/archive/daily_*` daily time-series data are published where the data are used from `1500` each day (or the nearest time-stamp)
 
 ### `/coronadata_ts_latest.{rds|json}`
 These two files contain the entire, scraped history exclusive number of deceases persons and number of hospitalisations by federal state.
