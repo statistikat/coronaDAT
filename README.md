@@ -3,6 +3,15 @@
 This repo contains official Covid19-related data provided by the Austrian ministry of Social Affairs, Health, Care and Consumer Protection at [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). The official dashboard only provides data at a given timestamp. In this repo we provide automatically (web)-scraped data so that data-analysis and visualisation is possible over time .
 
 ## Updates
+### 9.4.2020
+- for time-series compatibility, data available for single districts in Vienna have been grouped together
+- Region `Gröbming` has been grouped together with `Liezen` to allow for analysis for political districts
+- In all time-series files, labels of political districts have been replaced with an id (variable `bkz`)
+- In all time-series files, labels of federal states been replaced with an id (variable `nuts2`)
+- mapping-files between previously included labels and ids are provides 
+  * -`/mapping_nuts.{csv|rds|json}` for federal states
+  * -`/mapping_polbez.{csv|rds|json}` for politcal districts
+  
 ### 4.4.2020
 - all `csv` files are additionally provided using `,` (colon) as separator in the ` _en.csv` suffix because such files are better displayed on [`github.com`](https://www.github.com) ([issue #4](https://github.com/statistikat/coronaDAT/issues/4))
 
@@ -33,7 +42,7 @@ contains the scraped data from [`info.gesundheitsministerium.at`](https://info.g
 		+ `"nr_tests"`: number of tests performed
 		+ `"date"`: timestamp
 	* `bezirke`: number of cases by political districts. The file contains the following columns:
-		+ `"bezirk"`: name of political district
+		+ `"bkz"`: id of political district 
 		+ `"freq"`: number of confirmed cases
 		+ `"date"`: timestamp
 	* `alter`: number of cases by age-groups containing the following variables:
@@ -41,11 +50,11 @@ contains the scraped data from [`info.gesundheitsministerium.at`](https://info.g
 		+ `"freq"`: number of confirmed cases
 		+ `"date"`: timestamp
 	* `geschlecht`: percentage of Covid19-cases by gender with the following variables:
-		+ `"altersgruppe"`: gender group
+		+ `"geschlecht"`: gender group
 		+ `"freq"`: number of confirmed cases
 		+ `"date"`: timestamp
 	* `bundesland`: number of cases by federal states containing the following variables:
-		+ `"bundesland"`: name of federal state
+		+ `"nuts2"`: id of federal state
 		+ `"freq"`: number of confirmed cases
 		+ `"date"`: timestamp	
 	* `trend`: number of cases in Austria (total) by day (latest numbers) with the following columns:
@@ -76,3 +85,9 @@ Subfolder `/ts` contains the time-series data. The files are the same as `/archi
 
 ### `/coronadata_ts_latest.{rds|json}`
 These two files contain the entire, scraped history exclusive number of deceases persons and number of hospitalisations by federal state.
+
+### `/mapping_nuts.{rds|json|csv}`
+Contains mapping of federal states (`Bundesländer`) in variable `label` and the id (variable `code`) available in the data
+
+### `/mapping_polbez.{rds|json|csv}`
+Contains mapping of political districts in variable `label` and the id (variable `code`) available in the data
