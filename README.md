@@ -4,7 +4,7 @@ This repo contains official Covid19-related data provided by the Austrian minist
 
 ## Updates
 ### 11.4.2020
-- due to some updates [`here`](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html), the scrape-script failed for some hours. 
+- due to some updates [`here`](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html), the scraping-script failed for some hours until we were able to update it. 
 
 ### 9.4.2020
 - for time-series compatibility, data available for single districts in Vienna have been grouped together
