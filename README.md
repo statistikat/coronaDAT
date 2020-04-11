@@ -3,6 +3,9 @@
 This repo contains official Covid19-related data provided by the Austrian ministry of Social Affairs, Health, Care and Consumer Protection at [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). The official dashboard only provides data at a given timestamp. In this repo we provide automatically (web)-scraped data so that data-analysis and visualisation is possible over time .
 
 ## Updates
+### 11.4.2020
+- due to some updates [`here`](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung), the scrape-script failed for some hours. sorry.
+
 ### 9.4.2020
 - for time-series compatibility, data available for single districts in Vienna have been grouped together
 - Region `Gröbming` has been grouped together with `Liezen` to allow for analysis for political districts
@@ -25,7 +28,7 @@ This repo contains official Covid19-related data provided by the Austrian minist
 
 ### 26.3.2020
 The official dashboard changed on this day. Most-notable changes include:
--  the number of hospitalized persons/persons in intensive care was removed from the dashboard and is now provided (by federal state) daily at [this place](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung) , which is provided in the repo, too.
+-  the number of hospitalized persons/persons in intensive care was removed from the dashboard and is now provided (by federal state) daily at [this place](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Dashboard/Zahlen-zur-Hospitalisierung), which is provided in the repo, too.
 - data are updated only hourly and no longer every 15 minutes
 - data by political districts only contain a single value for Vienna (no district-numbers)
 
