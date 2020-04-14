@@ -3,6 +3,8 @@
 This repo contains official Covid19-related data provided by the Austrian ministry of Social Affairs, Health, Care and Consumer Protection at [`info.gesundheitsministerium.at`](https://info.gesundheitsministerium.at). The official dashboard only provides data at a given timestamp. In this repo we provide automatically (web)-scraped data so that data-analysis and visualisation is possible over time .
 
 ## Updates
+### 14.4.2020
+- due to a complete update of the dashboard, we are currently only updating the zip file provided [`here`](https://info.gesundheitsministerium.at/data/data.zip) in `/archive/{day}/data/{day}_{timestamp}_orig_csv.zip`; scraping sucks!.
 ### 11.4.2020
 - due to some updates [`here`](https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html), the scraping-script failed for some hours until we were able to update it. 
 
